@@ -1,5 +1,5 @@
 $(function(){
-
+  // different buttons to handle each operator
   $('#calcForm').on('click', '#add', add);
   $('#calcForm').on('click', '#sub', subtract);
   $('#calcForm').on('click', '#mul', multiply);
@@ -15,7 +15,7 @@ function add (){
   console.log(xyCalc);
 
   $.ajax({
-    url: '/calc/sum',
+    url: '/sum',
     type: 'POST',
     data:  xyCalc ,
     success: appendDom,
@@ -31,7 +31,7 @@ function subtract (){
   console.log(xyCalc);
 
   $.ajax({
-    url: '/calc/sub',
+    url: '/sub',
     type: 'POST',
     data: xyCalc,
     success: appendDom,
@@ -45,7 +45,7 @@ function multiply (){
   console.log(xyCalc);
 
   $.ajax({
-    url: '/calc/mul',
+    url: '/mul',
     type: 'POST',
     data: xyCalc,
     success: appendDom,
@@ -60,7 +60,7 @@ function divide (){
   console.log(xyCalc);
 
   $.ajax({
-    url: '/calc/div',
+    url: '/div',
     type: 'POST',
     data: xyCalc,
     success: appendDom
