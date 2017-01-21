@@ -1,18 +1,20 @@
 $(function(){
   // different buttons to handle each operator
-  $('#calcForm').on('click', '#add', add);
-  $('#calcForm').on('click', '#sub', subtract);
-  $('#calcForm').on('click', '#mul', multiply);
-  $('#calcForm').on('click', '#div', divide);
+  $('#add').click(add);
+  $('#sub').click(subtract);
+  $('#mul').click(multiply);
+  $('#div').click(divide);
   $('#clear').click(clear);
 
 });
+
 
 function add (){
 
   event.preventDefault();// stop the browser from trying to navigate away from our page
   var xyCalc = $('form').serialize();// get the information out of the form
   console.log(xyCalc);
+  // xyCalc.operator
 
   $.ajax({
     url: '/sum',

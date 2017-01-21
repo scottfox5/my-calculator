@@ -16,7 +16,6 @@ app.post( '/sum', function( req, res ) {
   var num = Number(req.body.x) + Number(req.body.y);
   console.log(num);
   res.send({num});
-  //res.sendStatus(200);
 });
 
 app.post( '/sub', function( req, res ) {
