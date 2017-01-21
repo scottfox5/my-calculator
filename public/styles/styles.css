@@ -1,0 +1,19 @@
+body {
+  font-family: 'Press Start 2P', cursive;
+  text-align: center;
+  background-color: ivory;
+}
+
+h1 {
+  margin: 50px 0 50px;
+}
+
+form input{
+  display: block;
+  margin: 0 40px 0 40px;
+  border: 1px solid black;
+}
+
+button {
+  margin: 50px 10px 50px 10px;
+}

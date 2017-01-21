@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Simple Calculator</title>
+
+    <!-- loads client side javascript  -->
+    <script src="../assets/vendors/jquery.min.js"></script>
+    <script src="../scripts/client.js"></script>
+
+    <!-- loads styles -->
+    <link rel="stylesheet" href="../assets/vendors/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/styles.css" />
+
+  </head>
+  <body>
+    <div class="container-fluid">
+      <header>
+        <h1>Scott's Calculator</h1>
+      </header>
+
+
+      <main>
+
+        <form id="calcForm">
+
+          <div class="row justify-content-center">
+            <div col-md-3>
+              <label>Enter Number</label>
+              <input type="number" name="x" placeholder="Enter Number"/>
+            </div>
+            <div col-md-3>
+              <label>Enter Number</label>
+              <input type="number" name="y" placeholder="Enter Number"/>
+            </div>
+          </div>
+
+          <button id="add" class="btn btn-primary">+</button>
+          <button id="sub" class="btn btn-primary">-</button>
+          <button id="mul" class="btn btn-primary">*</button>
+          <button id="div" class="btn btn-primary">/</button>
+          <button id="clear" class="btn btn-warning">clr</button>
+
+        </form>
+        <div id="result"></div>
+
+<!-- full bootstrap calculator  -->
+        <!-- <section class="row">
+          <button class='col-md-3 btn btn-primary' id='7'>7</button>
+          <button class='col-md-3' id='8'>8</button>
+          <button class='col-md-3' id='9'>9</button>
+          <button class='col-md-3' id='div'>/</button>
+        </section>
+        <section class="row">
+          <button class='col-md-3' id='4'>4</button>
+          <button class='col-md-3' id='5'>5</button>
+          <button class='col-md-3' id='6'>6</button>
+          <button class='col-md-3' id='mult'>*</button>
+        </section>
+        <section class="row">
+          <button class='col-md-3' id='1'>1</button>
+          <button class='col-md-3' id='2'>2</button>
+          <button class='col-md-3' id='3'>3</button>
+          <button class='col-md-3' id='sub'>-</button>
+        </section>
+        <section class="row">
+          <button class='col-md-3' id='1'>1</button>
+          <button class='col-md-3' id='2'>2</button>
+          <button class='col-md-3' id='3'>3</button>
+          <button class='col-md-3' id='+'>+</button>
+        </section>
+        <section class="row">
+            <button class='col-md-4' id='0'>0</button>
+            <button class='col-md-4' id='equal'>=</button>
+            <button class='col-md-4' id='clear'>clr</button>
+        </section>  -->
+
+      </main>
+    </div>
+  </body>
+</html>
