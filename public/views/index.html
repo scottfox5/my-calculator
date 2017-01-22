@@ -18,7 +18,8 @@
     <div>
 
       <header>
-        <h1>Scott's Calculator</h1>
+        <div><img class='img-resonsive' src="http://www.interestingfactsfun.com/wp-content/uploads/2016/03/Chinese-Abacus-and-Influence.jpg"/></div>
+        <div><h1>Scott's Calculator</h1></div>
       </header>
 
       <main class="calculator container-fluid">
@@ -37,10 +38,10 @@
         </form>
 
         <div class="btn-group btn-group-lg justify-content-center">
-          <button id="add" class="operator col-xs-1 btn btn-primary">+</button>
-          <button id="sub" class="operator col-xs-1 btn btn-primary">-</button>
-          <button id="mul" class="operator col-xs-1 btn btn-primary">*</button>
-          <button id="div" class="operator col-xs-1 btn btn-primary">/</button>
+          <button id="add" class="operator col-xs-1 btn btn-primary" data-operator='add'>+</button>
+          <button id="sub" class="operator col-xs-1 btn btn-primary" data-operator='sub'>-</button>
+          <button id="mul" class="operator col-xs-1 btn btn-primary" data-operator='mul'>*</button>
+          <button id="div" class="operator col-xs-1 btn btn-primary" data-operator='div'>/</button>
           <button id="clear" class="col-xs-1 btn btn-danger">clr</button>
         </div>
 
@@ -73,7 +74,7 @@
         <button class='col-xs-1 btn btn-outline-primary' id='1' data-value='1'>1</button>
         <button class='col-xs-1 btn btn-outline-primary' id='2' data-value='2'>2</button>
         <button class='col-xs-1 btn btn-outline-primary' id='3' data-value='3'>3</button>
-        <button class='col-xs-1 btn btn-primary' id='sub' data-value='subtract'>-</button>
+        <button class='col-xs-1 btn btn-primary' id='sub' data-operator='subtract'>-</button>
       </section>
       <section class="row btn-group-lg justify-content-center">
           <button class='col-xs-1 btn btn-outline-primary' id='0' data-value='0'>0</button>
