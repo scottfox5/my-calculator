@@ -36,15 +36,15 @@
           </div>
         </form>
 
-        <div class="row btn-group btn-group-lg justify-content-center">
-          <button id="add" class="col-xs-1 btn btn-primary">+</button>
-          <button id="sub" class="col-xs-1 btn btn-primary">-</button>
-          <button id="mul" class="col-xs-1 btn btn-primary">*</button>
-          <button id="div" class="col-xs-1 btn btn-primary">/</button>
+        <div class="btn-group btn-group-lg justify-content-center">
+          <button id="add" class="operator col-xs-1 btn btn-primary">+</button>
+          <button id="sub" class="operator col-xs-1 btn btn-primary">-</button>
+          <button id="mul" class="operator col-xs-1 btn btn-primary">*</button>
+          <button id="div" class="operator col-xs-1 btn btn-primary">/</button>
           <button id="clear" class="col-xs-1 btn btn-danger">clr</button>
         </div>
 
-        <div class="row justify-content-center" >
+        <div class="justify-content-center" >
           <div id="result"></div>
         </div>
 
@@ -52,38 +52,39 @@
 
     </div>
 
-    <!-- <main class="calculator container-fluid">
+    <h2>Testing: work in progress</h2>
+    <main class="calculator container-fluid">
       <div class="row justify-content-center" >
         <div id="result"></div>
       </div>
       <section class="row btn-group-lg justify-content-center">
-        <button class='col-xs-1 btn btn-outline-primary' id='7'>7</button>
-        <button class='col-xs-1 btn btn-outline-primary' id='8'>8</button>
-        <button class='col-xs-1 btn btn-outline-primary' id='9'>9</button>
-        <button class='col-xs-1 btn btn-primary' id='div'>/</button>
+        <button class='col-xs-1 btn btn-outline-primary' id='7' data-value='7'>7</button>
+        <button class='col-xs-1 btn btn-outline-primary' id='8' data-value='8'>8</button>
+        <button class='col-xs-1 btn btn-outline-primary' id='9' data-value='9'>9</button>
+        <button class='col-xs-1 btn btn-primary' id='div' data-operator="divison">/</button>
       </section>
       <section class="row btn-group-lg justify-content-center">
-        <button class='col-xs-1 btn btn-outline-primary' id='4'>4</button>
-        <button class='col-xs-1 btn btn-outline-primary' id='5'>5</button>
-        <button class='col-xs-1 btn btn-outline-primary' id='6'>6</button>
-        <button class='col-xs-1 btn btn-primary' id='mul'>*</button>
+        <button class='col-xs-1 btn btn-outline-primary' id='4' data-value='4'>4</button>
+        <button class='col-xs-1 btn btn-outline-primary' id='5' data-value='5'>5</button>
+        <button class='col-xs-1 btn btn-outline-primary' id='6' data-value='6'>6</button>
+        <button class='col-xs-1 btn btn-primary' id='mul' data-operator='multiply'>*</button>
       </section>
       <section class="row btn-group-lg justify-content-center">
-        <button class='col-xs-1 btn btn-outline-primary' id='1'>1</button>
-        <button class='col-xs-1 btn btn-outline-primary' id='2'>2</button>
-        <button class='col-xs-1 btn btn-outline-primary' id='3'>3</button>
-        <button class='col-xs-1 btn btn-primary' id='sub'>-</button>
+        <button class='col-xs-1 btn btn-outline-primary' id='1' data-value='1'>1</button>
+        <button class='col-xs-1 btn btn-outline-primary' id='2' data-value='2'>2</button>
+        <button class='col-xs-1 btn btn-outline-primary' id='3' data-value='3'>3</button>
+        <button class='col-xs-1 btn btn-primary' id='sub' data-value='subtract'>-</button>
       </section>
       <section class="row btn-group-lg justify-content-center">
-          <button class='col-xs-1 btn btn-outline-primary' id='0'>0</button>
-          <button class='col-xs-1 btn btn-outline-primary' id='dec'>.</button>
-          <button class='col-xs-1 btn btn-warning' id='equal'>=</button>
-          <button class='col-xs-1 btn btn-primary' id='add'>+</button>
+          <button class='col-xs-1 btn btn-outline-primary' id='0' data-value='0'>0</button>
+          <button class='col-xs-1 btn btn-outline-primary' id='dec' data-operator='decimal'>.</button>
+          <button class='col-xs-1 btn btn-warning' id='equal' data-operator='equals'>=</button>
+          <button class='col-xs-1 btn btn-primary' id='add' data-operator='add'>+</button>
       </section>
       <section class="row justify-content-center">
-              <button class='btn btn-lg btn-danger btn-block' id='clear'>clr</button>
+              <button class='btn btn-lg btn-danger btn-block' id='clear' data-operator='clear'>clr</button>
       </section>
-    </main> -->
+    </main>
 
   </body>
 </html>
