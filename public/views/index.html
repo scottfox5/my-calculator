@@ -18,74 +18,72 @@
     <div>
 
       <header>
-        <div><img class='img-resonsive' src="http://www.interestingfactsfun.com/wp-content/uploads/2016/03/Chinese-Abacus-and-Influence.jpg"/></div>
-        <div><h1>Scott's Calculator</h1></div>
+        <div><img class='img-resonsive' src="http://www.ikea.com/us/en/images/products/mula-abacus__0341681_PE547791_S4.JPG"/></div>
+        <div><h1 class="rainbow text-center">Scott's Calculator</h1></div>
       </header>
 
       <main class="calculator container-fluid">
-
-        <form id="calcForm">
-          <div class="row justify-content-center">
-            <div class="col">
-              <label>Enter Number</label>
-              <input type="number" name="x" placeholder="Enter Number"/>
-            </div>
-            <div class="col">
-              <label>Enter Number</label>
-              <input type="number" name="y" placeholder="Enter Number"/>
-            </div>
-          </div>
-        </form>
-
-        <div class="btn-group btn-group-lg justify-content-center">
-          <button id="add" class="operator col-xs-1 btn btn-primary" data-operator='add'>+</button>
-          <button id="sub" class="operator col-xs-1 btn btn-primary" data-operator='sub'>-</button>
-          <button id="mul" class="operator col-xs-1 btn btn-primary" data-operator='mul'>*</button>
-          <button id="div" class="operator col-xs-1 btn btn-primary" data-operator='div'>/</button>
-          <button id="clear" class="col-xs-1 btn btn-danger">clr</button>
+        <div class="row justify-content-center">
+          <div id="display-box"></div>
         </div>
-
-        <div class="justify-content-center" >
-          <div id="result"></div>
-        </div>
-
+        <section class="row btn-group-lg justify-content-center">
+          <button class='num col-xs-1 btn btn-outline-primary' id='7' data-value='7'>7</button>
+          <button class='num col-xs-1 btn btn-outline-primary' id='8' data-value='8'>8</button>
+          <button class='num col-xs-1 btn btn-outline-primary' id='9' data-value='9'>9</button>
+          <button class='operator col-xs-1 btn btn-primary' id='div' data-operator="divide">/</button>
+        </section>
+        <section class="row btn-group-lg justify-content-center">
+          <button class='num col-xs-1 btn btn-outline-primary' id='4' data-value='4'>4</button>
+          <button class='num col-xs-1 btn btn-outline-primary' id='5' data-value='5'>5</button>
+          <button class='num col-xs-1 btn btn-outline-primary' id='6' data-value='6'>6</button>
+          <button class='operator col-xs-1 btn btn-primary' id='mul' data-operator='multiply'>*</button>
+        </section>
+        <section class="row btn-group-lg justify-content-center">
+          <button class='num col-xs-1 btn btn-outline-primary' id='1' data-value='1'>1</button>
+          <button class='num col-xs-1 btn btn-outline-primary' id='2' data-value='2'>2</button>
+          <button class='num col-xs-1 btn btn-outline-primary' id='3' data-value='3'>3</button>
+          <button class='operator col-xs-1 btn btn-primary' id='sub' data-operator='subtract'>-</button>
+        </section>
+        <section class="row btn-group-lg justify-content-center">
+            <button class='num col-xs-1 btn btn-outline-primary' id='0' data-value='0'>0</button>
+            <button class='num col-xs-1 btn btn-outline-primary' id='dec' data-value='.'>.</button>
+            <button class='col-xs-1 btn btn-warning' id='equal' data-operator='equals'>=</button>
+            <button class='operator col-xs-1 btn btn-primary' id='add' data-operator='add'>+</button>
+        </section>
+        <section class="row justify-content-center">
+                <button class='btn btn-lg btn-danger btn-block' id='clear' data-operator='clear'>clr</button>
+        </section>
       </main>
-
     </div>
-
-    <h2>Testing: work in progress</h2>
-    <main class="calculator container-fluid">
-      <div class="row justify-content-center" >
-        <div id="result"></div>
-      </div>
-      <section class="row btn-group-lg justify-content-center">
-        <button class='col-xs-1 btn btn-outline-primary' id='7' data-value='7'>7</button>
-        <button class='col-xs-1 btn btn-outline-primary' id='8' data-value='8'>8</button>
-        <button class='col-xs-1 btn btn-outline-primary' id='9' data-value='9'>9</button>
-        <button class='col-xs-1 btn btn-primary' id='div' data-operator="divison">/</button>
-      </section>
-      <section class="row btn-group-lg justify-content-center">
-        <button class='col-xs-1 btn btn-outline-primary' id='4' data-value='4'>4</button>
-        <button class='col-xs-1 btn btn-outline-primary' id='5' data-value='5'>5</button>
-        <button class='col-xs-1 btn btn-outline-primary' id='6' data-value='6'>6</button>
-        <button class='col-xs-1 btn btn-primary' id='mul' data-operator='multiply'>*</button>
-      </section>
-      <section class="row btn-group-lg justify-content-center">
-        <button class='col-xs-1 btn btn-outline-primary' id='1' data-value='1'>1</button>
-        <button class='col-xs-1 btn btn-outline-primary' id='2' data-value='2'>2</button>
-        <button class='col-xs-1 btn btn-outline-primary' id='3' data-value='3'>3</button>
-        <button class='col-xs-1 btn btn-primary' id='sub' data-operator='subtract'>-</button>
-      </section>
-      <section class="row btn-group-lg justify-content-center">
-          <button class='col-xs-1 btn btn-outline-primary' id='0' data-value='0'>0</button>
-          <button class='col-xs-1 btn btn-outline-primary' id='dec' data-operator='decimal'>.</button>
-          <button class='col-xs-1 btn btn-warning' id='equal' data-operator='equals'>=</button>
-          <button class='col-xs-1 btn btn-primary' id='add' data-operator='add'>+</button>
-      </section>
-      <section class="row justify-content-center">
-              <button class='btn btn-lg btn-danger btn-block' id='clear' data-operator='clear'>clr</button>
-      </section>
-    </main>
-
   </body>
 </html>
+
+<!-- this is the html for the base challenge -->
+<!-- <main class="calculator container-fluid">
+
+  <form id="calcForm">
+    <div class="row justify-content-center">
+      <div class="col">
+        <label>Enter Number</label>
+        <input type="number" name="x" placeholder="Enter Number"/>
+      </div>
+      <div class="col">
+        <label>Enter Number</label>
+        <input type="number" name="y" placeholder="Enter Number"/>
+      </div>
+    </div>
+  </form>
+
+  <div class="btn-group btn-group-lg justify-content-center">
+    <button id="add" class="operator col-xs-1 btn btn-primary" data-operator='add'>+</button>
+    <button id="sub" class="operator col-xs-1 btn btn-primary" data-operator='sub'>-</button>
+    <button id="mul" class="operator col-xs-1 btn btn-primary" data-operator='mul'>*</button>
+    <button id="div" class="operator col-xs-1 btn btn-primary" data-operator='div'>/</button>
+    <button id="clear" class="col-xs-1 btn btn-danger">clr</button>
+  </div>
+
+  <div class="justify-content-center" >
+    <div id="result"></div>
+  </div>
+
+</main> -->

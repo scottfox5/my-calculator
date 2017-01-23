@@ -11,27 +11,30 @@ app.get('/', function(req, res) {
 });
 
 // // four different POST requests to handle each type of operation
-app.post( '/sum', function( req, res ) {
-  var num = Number(req.body.x) + Number(req.body.y);
+app.post( '/add', function( req, res ) {
+  var num = Number(req.body.numX) + Number(req.body.numY);
   res.send({num});
 });
 
 app.post( '/sub', function( req, res ) {
- 	var num = Number(req.body.x) - Number(req.body.y);
+ 	var num = Number(req.body.numX) - Number(req.body.numY);
   res.send({num})
 });
 
  app.post( '/mul', function( req, res ) {
- 	var num = Number(req.body.x) * Number(req.body.y);
+ 	var num = Number(req.body.numX) * Number(req.body.numY);
   res.send({num});
 });
 
 app.post( '/div', function( req, res ) {
- 	var num = Number(req.body.x) / Number(req.body.y);
+ 	var num = Number(req.body.numX) / Number(req.body.numY);
   res.send({num});
  });
 
- // doing the math in one post request with a switch statment based on the math operator
+app.listen(3000);
+
+ // // this is the code used for the base assignment
+ // // doing the math in one post request with a switch statment based on the math operator
  // app.post( '/calc', function( req, res ) {
  //   console.log(req.body);
  //   switch (req.body.operator) {
@@ -56,5 +59,3 @@ app.post( '/div', function( req, res ) {
  //       res.sendStatus(400);
  //   }
  // });
-
-app.listen(3000);
