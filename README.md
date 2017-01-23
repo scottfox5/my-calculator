@@ -1,3 +1,13 @@
-#Scott Fox
+#Weekend Challenge 3
 
-This project is a calculator that runs from the server.
+This is a simple web calculator that can handle the four basic arithmetic operations. The numbers and arithmetic operation are sent to the server where the calculations occur, then the result is sent back to the client where it is displayed.
+
+##Author: Scott Fox
+
+##Date: 22 Jan 2017
+
+###Technology used:
+HTML, CSS, JavaScript, jQuery, Node.js, Express, Git
+
+###Setup:
+npm init, npm install express --save, npm install body-parser --save, node server.js

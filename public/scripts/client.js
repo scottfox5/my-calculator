@@ -68,11 +68,11 @@ $(function(){
   })
 });
 
-function appendDom(data){
+function appendDom(data){ // results of calulation are returned and appended to DOM
   $("#display-box").append('<span>' + data.num + '</span>');
 }
 
-function clear () {
+function clear () { // this is the function to clear the display
   $('#display-box').empty();
 }
 
