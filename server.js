@@ -3,7 +3,7 @@ var path = require('path');
 var bodyParser = require('body-parser');
 var app = express();
 
-app.use(express.static('public'));
+app.use(express.static('public')); // allows every file in public to be available to others
 app.use(bodyParser.urlencoded({extended: true}));
 
 app.get('/', function(req, res) {
@@ -31,7 +31,10 @@ app.post( '/div', function( req, res ) {
   res.send({num});
  });
 
-app.listen(3000);
+ var port = process.env.PORT || 5555;
+ var server = app.listen(port, function () {
+   console.log('Listening on port ', server.address().port);
+ });
 
  // // this is the code used for the base assignment
  // // doing the math in one post request with a switch statment based on the math operator

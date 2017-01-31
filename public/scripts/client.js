@@ -16,6 +16,17 @@ $(function(){
     $('#display-box').empty(); // display is emptied
   })
 
+  // $('#decimal').one('click', function(){
+  //   $('#display-box').append($(this).data('value'));
+  // })
+
+  // $('#decimal').click(function(){
+  //   if ($('#display-box').text().includes('.')){
+  //   } else {
+  //     // $($'display-box').text();
+  //   }
+  // })
+
   $('#equal').click(function(){ // when equal button is clicked
 
     numY = $('#display-box').text(); // number on display is stored in variable
