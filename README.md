@@ -15,6 +15,6 @@ This is a simple web calculator that can handle the four basic arithmetic operat
 - Express
 - Git
 
-###Setup:
+### Setup:
 - npm install
 
