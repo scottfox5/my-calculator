@@ -6,6 +6,8 @@ This is a simple web calculator that can handle the four basic arithmetic operat
 
 ## Date: 22 Jan 2017
 
+### URL: https://my-simple-calculator.herokuapp.com/
+
 ### Technology used:
 - HTML
 - CSS
